@@ -7,7 +7,7 @@ export default function TaskTab({ type, selectedTab, setSelectedTab }) {
     <div className="relative">
       <div
         onClick={handleClick}
-        className="py-5 max-[400px]:py-3  max-[400px]:text-sm flex justify-center relative z-40 items-center duration-75 ease-linear cursor-pointer dark:border-dark-background rounded"
+        className="py-5 max-[400px]:py-3  max-[400px]:text-sm flex justify-center relative z-20 items-center duration-75 ease-linear cursor-pointer dark:border-dark-background rounded"
       >
         {type}
       </div>
