@@ -198,7 +198,7 @@ export default function Navbar({ userData }) {
 
   const mobile = (
     <>
-      <nav className="border-b border-border dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-20 left-0 flex justify-between px-10 py-3 ">
+      <nav className="border-b border-border dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-40 left-0 flex justify-between px-10 py-3 ">
         <Hamburger
           handleHamburger={handleHamburger}
           hamburgerOpen={hamburgerOpen}
