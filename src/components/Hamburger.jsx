@@ -6,7 +6,7 @@ export default function Hamburger({ handleHamburger, hamburgerOpen }) {
       className="flex flex-col gap-[10px] cursor-pointer items-center justify-center"
     >
       <motion.div
-        animate={{ rotate: hamburgerOpen ? 45 : 0 , y: hamburgerOpen && 10}}
+        animate={{ rotate: hamburgerOpen ? 45 : 0 , y: hamburgerOpen? 13:10}}
         className="w-9 h-1 bg-primary dark:bg-dark-primary "
       ></motion.div>
       <motion.div
