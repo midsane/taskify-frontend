@@ -37,7 +37,8 @@ export default function Profile() {
     <div className="h-screen bg-background lg:h-screen gap-10 flex flex-col justify-center items-center w-full pt-20 ">
       <section className="h-[10%] py-10 w-[80%] gap-5 flex flex-col justify-center items-center">
        <div className="relative" >  
-       <h1 className="text-lg text-center ">
+       <h1 className="text-lg text-center "  style="
+    padding-top: 10px;" >
           Simplify Your Task Management With
           <motion.span className="bg-gradient-to-r from-yellow-400 to-primary dark:from-cyan-300 dark:to-dark-primary text-lg text-transparent bg-clip-text font-medium ">
             {" Taskify"}
