@@ -4,7 +4,7 @@ import { useScroll } from "framer-motion";
 
 export default function Content() {
   const { scrollYProgress } = useScroll();
-  const hidingDivScaleY = useTransform(scrollYProgress, [0.6, 1], [1, 0]);
+  const hidingDivScaleY = useTransform(scrollYProgress, [0.4, 0.8], [1, 0]);
 
   return (
     <div
