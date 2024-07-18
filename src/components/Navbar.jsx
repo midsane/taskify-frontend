@@ -198,7 +198,7 @@ export default function Navbar({ userData }) {
 
   const mobile = (
     <>
-      <nav className="border-b border-border dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-40 left-0 flex justify-between px-10 py-3 ">
+      <nav className="border-b border-border dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-30 left-0 flex justify-between px-10 py-3 ">
         <Hamburger
           handleHamburger={handleHamburger}
           hamburgerOpen={hamburgerOpen}
@@ -246,7 +246,7 @@ export default function Navbar({ userData }) {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="bg-background2 border-t border-b border-primary dark:border-dark-primary w-screen z-30 dark:bg-dark-background2 dark:text-dark-text flex flex-col text-text fixed top-20 px-10 py-10 "
+            className="bg-background2 border-t border-b border-primary dark:border-dark-primary w-screen z-40 dark:bg-dark-background2 dark:text-dark-text flex flex-col text-text fixed top-20 px-10 py-10 "
           >
             {NavTags.map((item) => (
               <HamburgerNav
