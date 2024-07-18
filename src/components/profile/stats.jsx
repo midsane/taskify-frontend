@@ -10,7 +10,7 @@ const getUsersRank = (rankArray, username) => {
 };
 
 export default function Stats({ taskifyPoints, rankList, username }) {
-  console.log(rankList);
+
   return (
     <div className="flex p-2 w-full max-[417px]:flex-col max-[417px]:gap-2 justify-center items-center">
       <Suspense fallback=<LoaderUi />>
