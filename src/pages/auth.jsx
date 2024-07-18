@@ -57,7 +57,8 @@ export const action = async({request}) => {
         throw json({message: "unsupported mode"}, {status: 422})
     }
 
-    const response = await fetch(baseURl+"/"+mode,{
+   
+    const response = await fetch(baseURl+mode,{
         method: "POST",
         body: JSON.stringify(body),
         headers: {

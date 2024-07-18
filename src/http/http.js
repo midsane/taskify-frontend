@@ -1,5 +1,5 @@
 import { defer, json, redirect } from "react-router-dom";
-export const baseURl = "https://taskify-backend-nu.vercel.app";
+export const baseURl = "https://taskify-backend-nu.vercel.app/";
 
 export const addImageToDb = async (pfp) => {
   const token = localStorage.getItem("token");
