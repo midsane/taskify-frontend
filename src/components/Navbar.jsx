@@ -198,7 +198,7 @@ export default function Navbar({ userData }) {
 
   const mobile = (
     <>
-      <nav className="border-b border-border dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-30 left-0 flex justify-between px-10 py-3 ">
+      <nav className="border-b border-border max-[400px]:h-14 dark:border-dark-border bg-background2 dark:bg-dark-background2 fixed w-screen h-20 top-0 z-30 left-0 flex justify-between px-10 py-3 ">
         <Hamburger
           handleHamburger={handleHamburger}
           hamburgerOpen={hamburgerOpen}
@@ -209,7 +209,7 @@ export default function Navbar({ userData }) {
               <Link to="/">
                 <img
                   onClick={() => setSelectedTab("Home")}
-                  className="h-full w-auto"
+                  className="h-10 w-auto"
                   src="logo.png"
                 />
               </Link>{" "}
@@ -217,7 +217,7 @@ export default function Navbar({ userData }) {
           </li>
           <li>
             <button
-              className="rounded-3xl h-14 p-2 hover:bg-background dark:hover:bg-dark-background"
+              className="rounded-3xl h-12 p-2 hover:bg-background dark:hover:bg-dark-background"
               onClick={handleClick}
             >
               <motion.img
@@ -268,7 +268,7 @@ export default function Navbar({ userData }) {
       {navbar === "desktop" ? desktop : mobile}
 
       <motion.div
-        className="h-2 w-screen z-30 origin-left left-0 fixed top-20 bg-gradient-to-r from-yellow-300 to-yellow-400 dark:bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-400"
+        className="h-2 w-screen z-30 origin-left max-[400px]:top-14 max-[400px]:h-1 left-0 fixed top-20 bg-gradient-to-r from-yellow-300 to-yellow-400 dark:bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-400"
         style={{ scaleX }}
       ></motion.div>
     </>
