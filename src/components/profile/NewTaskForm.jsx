@@ -78,7 +78,7 @@ export default function NewTaskForm({ onClose, task }) {
         className="flex flex-col gap-10 p-10 max-[360px]:px-5 max[360px]:gap-5 max-[360px]:text-sm  rounded bg-background2"
       >
         <div>
-          <h2 className="opacity-60">Add a Task </h2>
+          <h2 className="opacity-60">{task?'Update the Task': "Add a Task"} </h2>
           <img
             className="absolute top-2 right-2 opacity-80 hover:opacity-100 cursor-pointer hover:scale-105 duration-75 ease-linear w-5"
             onClick={onClose}

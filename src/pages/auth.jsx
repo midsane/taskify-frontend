@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { baseURl } from "../http/http"
+import { AnimatePresence, motion } from "framer-motion"
 import {useLocation, Form, Link, useNavigate, redirect, json, useActionData} from "react-router-dom"
 export default function Auth(){
     const location = useLocation()
@@ -23,7 +24,13 @@ export default function Auth(){
         navigate(`/auth?mode=${path}`)
     }
 
-    return <div className="w-full h-screen p-10 flex bg-background dark:bg-dark-background flex-col gap-10 justify-center items-center">
+    return  <AnimatePresence>
+                <motion.div 
+        key={mode}
+        initial={{opacity:0, y:-20}}
+        animate={{opacity:1, y:0}}
+        exit={{opacity:0, y:-20}}
+        className="w-full h-screen p-10 flex bg-background dark:bg-dark-background flex-col gap-10 justify-center items-center">
         <Form method="POST" >
             <div className=" shadow shadow-border border border-border dark:shadow-dark-border dark:border-dark-border flex flex-col gap-10 bg-background2 p-10 rounded dark:bg-dark-background2" >
             <p>{mode}</p>
@@ -40,7 +47,8 @@ export default function Auth(){
           
 
         </Form>
-    </div>
+    </motion.div>
+    </AnimatePresence>
 }
 
 

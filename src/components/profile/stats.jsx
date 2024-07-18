@@ -5,6 +5,7 @@ import LoaderUi from "../UI/loader/loader";
 
 const getUsersRank = (rankArray, username) => {
   const index = rankArray.findIndex((user) => user.username === username);
+ 
   return index + 1;
 };
 
