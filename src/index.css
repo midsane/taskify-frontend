@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #5fe95f;
+  --color-secondary: #87ff87;
+  --color-background: #000a200d;
+
+  --color-text: #000000;
+  --color-secondary-background: rgb(255, 255, 255);
+  --color-border: rgb(229, 231, 235);
+
+  --color-dark-primary: rgb(44 187 93);
+  --color-dark-secondary: #02b128;
+  --color-dark-background: #1a1a1a;
+  --color-dark-text: rgb(255, 255, 255);
+
+  --color-dark-secondary-background: rgb(40, 40, 40);
+  --color-dark-border: #ffffff1a;
+}
+
+li,
+button,
+img {
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}

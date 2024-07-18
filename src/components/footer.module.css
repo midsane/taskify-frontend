@@ -1,0 +1,21 @@
+.svgContainer svg {
+  width: 50px;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 600px) {
+  .svgContainer svg {
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .svgContainer svg {
+    width: 30px;
+  }
+}

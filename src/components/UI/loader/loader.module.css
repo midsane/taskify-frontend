@@ -1,0 +1,9 @@
+.main {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  opacity: 1;
+  position: relative;
+  z-index: 100;
+  border-top: 3px solid var(--color-primary);
+}
