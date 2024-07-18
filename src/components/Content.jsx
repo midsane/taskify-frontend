@@ -24,8 +24,7 @@ export default function Content() {
       <p className="my-20 lg:w-[70%]">
         <span className="text-xl text-primary">Taskify</span> is here to help
         you streamline your tasks and achieve maximum productivity. Our
-        user-friendly platform allows you to effortlessly add tasks, categorize
-        them for easy organization, and track your progress seamlessly. Simply
+        user-friendly platform allows you to effortlessly add tasks, and track your progress seamlessly. Simply
         add your tasks, mark them as completed as you conquer them, and watch
         your productivity soar. Whether you're managing personal goals, work
         projects, or everyday errands, Taskify empowers you to stay focused,
