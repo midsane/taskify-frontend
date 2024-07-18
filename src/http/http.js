@@ -1,6 +1,6 @@
 import { defer, json, redirect } from "react-router-dom";
-// export const baseURl = "https://taskify-backend-j23x.onrender.com/";
-export const baseURl = "http://localhost:3000/";
+export const baseURl = "https://taskify-backend-j23x.onrender.com/";
+// export const baseURl = "http://localhost:3000/";
 export const addImageToDb = async (pfp) => {
   const token = localStorage.getItem("token");
   const response = await fetch(baseURl + "profile/pfp", {
