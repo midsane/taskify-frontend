@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { baseURl } from "../http/http"
 import {useLocation, Form, Link, useNavigate, redirect, json, useActionData} from "react-router-dom"
 export default function Auth(){
     const location = useLocation()
@@ -56,7 +57,7 @@ export const action = async({request}) => {
         throw json({message: "unsupported mode"}, {status: 422})
     }
 
-    const response = await fetch("http://localhost:3000/"+mode,{
+    const response = await fetch(baseURl+mode,{
         method: "POST",
         body: JSON.stringify(body),
         headers: {
