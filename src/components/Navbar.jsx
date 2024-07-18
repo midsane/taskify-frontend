@@ -246,7 +246,7 @@ export default function Navbar({ userData }) {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="bg-background border-t border-b border-primary dark:border-dark-primary w-screen z-30 dark:bg-dark-background2 dark:text-dark-text flex flex-col text-text fixed top-20 px-10 py-10 "
+            className="bg-background2 border-t border-b border-primary dark:border-dark-primary w-screen z-30 dark:bg-dark-background2 dark:text-dark-text flex flex-col text-text fixed top-20 px-10 py-10 "
           >
             {NavTags.map((item) => (
               <HamburgerNav
