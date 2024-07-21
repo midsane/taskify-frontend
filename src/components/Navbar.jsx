@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import darkImg from "../assets/dark.png";
 import lightImg from "../assets/light.png";
-import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Context } from "../store/store";
 
 import HamburgerNav from "./HamburgerNavElements";
@@ -32,12 +32,6 @@ export default function Navbar({ userData }) {
   const currentTab = getCurrentTab(location.pathname);
   const [selectedTab, setSelectedTab] = useState(currentTab);
 
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
   const { theme, setTheme } = useContext(Context);
 
   const handleClick = () => {
@@ -266,11 +260,6 @@ export default function Navbar({ userData }) {
   return (
     <>
       {navbar === "desktop" ? desktop : mobile}
-
-      <motion.div
-        className="h-2 w-screen z-30 origin-left max-[400px]:top-14 max-[400px]:h-1 left-0 fixed top-20 bg-gradient-to-r from-yellow-300 to-yellow-400 dark:bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-400"
-        style={{ scaleX }}
-      ></motion.div>
     </>
   );
 }
