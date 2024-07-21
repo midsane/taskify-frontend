@@ -6,8 +6,15 @@ import ContextProvider from "../store/store";
 import { scrollTop } from "../components/scrollTotop";
 import { baseURl } from "../http/http";
 import IntroAnimation from "../intro-animation/introAnimation";
+import { motion, useScroll, useSpring} from "framer-motion";
 
 export default function RootLayout() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   scrollTop();
   const data = useLoaderData();
   let userData = null;
@@ -17,6 +24,10 @@ export default function RootLayout() {
 
   return (
     <ContextProvider>
+      <motion.div
+        className="h-2 w-screen z-30 origin-left max-[400px]:top-14 max-[400px]:h-1 left-0 fixed top-20 bg-gradient-to-r from-yellow-300 to-yellow-400 dark:bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-400"
+        style={{ scaleX }}
+      ></motion.div>
       <IntroAnimation />
       <Navbar userData={userData} />
       <Outlet />
