@@ -48,6 +48,7 @@ export default function Auth() {
 
                     <label htmlFor="password" />
                     <input
+                        type="password"
                         className="text-stone-800 p-2 rounded shadow-sm" id="password" name="password" placeholder="password" ></input>
 
                     <p>length of password should be between 5 and 20</p>
