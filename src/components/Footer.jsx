@@ -189,7 +189,7 @@ export default function Footer() {
           <MagneticFramer link="mailto:adityaraj10544@gmail.com">
             {gma}
           </MagneticFramer>
-          <MagneticFramer link="https://github.com/AdityaRaj150">
+          <MagneticFramer link="https://github.com/midsane">
             {git}
           </MagneticFramer>
         </div>
